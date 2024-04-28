@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slideLeftToRight {
+  0% {
+    transform: translateX(-20%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-30%);
+  }
+}
+
+.animate-slide-left-to-right-and-back {
+  animation: slideRightToLeft2 2s linear alternate-reverse infinite;
+}
+
+.animate-slide-left-to-right-and-back-1 {
+  animation: slideRightToLeft 1s linear alternate-reverse infinite;
+}
+
+.animate-slide-left-to-right-and-back-4 {
+  animation: slideRightToLeft 1s linear alternate-reverse infinite;
+}
+
+.animate-slide-left-to-right-and-back-3 {
+  animation: slideLeftToRight 2s linear alternate-reverse infinite
+}
+
+.animate-slide-left-to-right-and-back-2 {
+  animation: slideRightToLeft 2s linear alternate-reverse infinite, shrinkRightToLeft 2s linear forwards;
+}
+
+@keyframes slideRightToLeft2 {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slideRightToLeft1 {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-30%);
+  }
+}
+
+.animate-slide-left-to-right-and-back-1 {
+  animation: slideLeftToRight1 1s linear alternate-reverse infinite;
+}
+
+@keyframes growLeftToRight {
+  0% {
+    width: 90%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes shrinkRightToLeft {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: -20%;
+  }
+}
+
+.animate-grow-left-to-right-and-back {
+  animation: growLeftToRight 2s linear alternate-reverse infinite, shrinkRightToLeft 2s linear alternate-reverse;
+}
+
+@keyframes moveUp {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes moveDown {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+.animatedElement {
+  animation: moveUp 1s ease-in-out infinite alternate;
+}
+
+.animatedElement:nth-child(2) {
+  animation-name: moveDown;
+}
+
+@keyframes slideLeftToRightCarousal {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide-left {
+  animation: slideLeftToRightCarousal 3s linear infinite;
+}
