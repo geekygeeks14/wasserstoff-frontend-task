@@ -6,7 +6,7 @@
 
 4. A public Video link (5-10 min) explaining demo of the project-> https://drive.google.com/file/d/1nNdVQ7WoJdrErz6sH_55lixKkY9Liigr/view?usp=sharing
 
-5. A vercel or any other public hosted link
+5. A vercel or any other public hosted link -> https://wasserstoff-frontend-task-sandy.vercel.app/artist
 
 6. A paragraph explaining how you approached the task. ->
 
