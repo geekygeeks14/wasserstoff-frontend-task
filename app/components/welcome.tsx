@@ -10,6 +10,7 @@ const Welcome = () => {
         setTimeout(() => {
             router.push('/artist', { scroll: false })
         }, 8000);
+         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     // Welcome page code
@@ -18,7 +19,7 @@ const Welcome = () => {
             {/* logo section */}
             <div className="h-2/6 animate-shrink-left-to-right-and-back infinite">
                 <div className="pt-12">
-                    <img className="ml-10" src="./logo.png" />
+                    <img className="ml-10" src="./logo.png" alt="logo"/>
                 </div>
             </div>
 

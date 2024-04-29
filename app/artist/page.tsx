@@ -15,8 +15,9 @@ const Artist = () => {
     useEffect(() => {
         setTimeout(() => {
             router.push('/', { scroll: false })
-        }, 10000);
-    }, [])
+        },10000);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[])
     return (
         <>
             <div className="flex flex-col h-screen w-full md:flex-row" style={{ backgroundColor: "#15171b" }}>

@@ -28,6 +28,7 @@ const Index: React.FC<{ images: ImagesProp }> = ({ images }) => {
           {images.map((s, i) => {
             return <img src={s}
               alt="image"
+              key={i}
               className={` 
           ${i !== current ? "ml-3 mr-3" : ""
                 }`
