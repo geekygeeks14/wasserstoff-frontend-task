@@ -114,13 +114,27 @@
   }
 }
 
-.animatedElement {
+/* .animatedElement {
   animation: moveUp 1s ease-in-out infinite alternate;
 }
 
 .animatedElement:nth-child(2) {
   animation-name: moveDown;
+} */
+
+@keyframes moveUpInfinite {
+  0% {
+    transform: translateY(80%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
 }
+
+.animatedElement {
+  animation: moveUpInfinite 5s linear infinite;
+}
+
 
 @keyframes slideLeftToRightCarousal {
   0% {
